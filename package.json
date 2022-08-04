@@ -1,0 +1,45 @@
+{
+  "name": "rollup-plugin-yaml-locales",
+  "version": "1.0.0",
+  "description": "Converts a single YAML file to multiple messages.json locale files",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf ./dist/",
+    "test": "ava",
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "rollup": "^2.0.0"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^4.2.1",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "ava": "^4.3.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.77.2"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "vite-plugin",
+    "chrome-extension",
+    "browser-extension",
+    "yaml",
+    "i18n"
+  ],
+  "repository": "ukhan/rollup-plugin-yaml-locales",
+  "homepage": "https://github.com/ukhan/rollup-plugin-yaml-locales#readme",
+  "bugs": {
+    "url": "https://github.com/ukhan/rollup-plugin-yaml-locales/issues"
+  },
+  "author": "Pavel Ukhan <pavel.ukhan@gmail.com>",
+  "license": "MIT"
+}
